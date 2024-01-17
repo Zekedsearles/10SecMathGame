@@ -1,3 +1,22 @@
-h2 {
+h1 {
     color: blue;
+    padding-top: 60px;
   }
+label {
+  font-size: 25px;
+  padding: 15px;
+}
+.form-check-label {
+  margin-left: 5px;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+  background-image: url('photos/crissy-jarvis-cHhbULJbPwM-unsplash\ \(1\).jpg');
+}
+#equation {
+  color: lightcoral;
+  font-size: 30px;
+}

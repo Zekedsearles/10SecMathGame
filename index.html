@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>10 Second Game</title>
-        <link rel="stylesheets" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
         <link href="index.css" rel="stylesheet" type="text/css" />
         <script src="index.js"></script>
@@ -12,13 +12,28 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
-                    <h2>10 Second Game</h2>
-                    <h4>Time left: <span id="time-left"></span></h3>
+                <div class="col-12">
+                    <h1>10 Second Game</h1>
+                    <h3>Time left: <span id="time-left"></span></h3>
                     <h3 id="equation"></h3>
                     <input id="user-input"/>
+                </div>
+                <div class="col-12  " >   
                     <h4>Score: <span id="score"></span></h4>
                     <h4>High Score: <span id="high-score"></span></h4>
+                </div>
+                <div class="col-12">
+                    <h4>Game Options</h4>
+                    <div class="form-check" id="check-boxes">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="plus">
+                        <label class="form-check-label" for="plus"> + </label>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="minus">
+                        <label class="form-check-label" for="minus"> - </label>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="times">
+                        <label class="form-check-label" for="times"> x </label>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="division">
+                        <label class="form-check-label" for="division"> ÷ </label>
+                    </div>
                 </div>
             </div>
         </div>
