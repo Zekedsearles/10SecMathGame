@@ -50,12 +50,18 @@ $(document).ready(function () {
             question.answer = num1 + num2;
             question.equation = String(num1) + ' + ' + String(num2);
         } else if($('#minus').is(':checked')) {
+            if(num1 < num2) {
+                var temp = num1;
+                num1 = num2;
+                num2 = temp;
+            }
             question.answer = num1 - num2;
             question.equation = String(num1) + ' - ' + String(num2);
         } else if($('#times').is(':checked')) {
             question.answer = num1 * num2;
             question.equation = String(num1) + ' x ' + String(num2);
         } else if($('#division').is(':checked')) {
+            num2 = num2 ? 1 : num2;
             question.answer = num1 / num2;
             question.equation = String(num1) + ' ÷ ' + String(num2);
         }
@@ -73,6 +79,8 @@ $(document).ready(function () {
         $('#time-left').text(timeLeft);
         clearInterval(interval);
         interval = undefined;
+        updateScore(-score)
+
     }
     $('#user-input').on('keyup', function () {
         startGame();
